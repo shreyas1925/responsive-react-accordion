@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitter&family=Mate+SC&family=Raleway&family=Roboto:wght@500&family=Source+Sans+Pro:wght@300;600&family=Squada+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap");
 * {
   margin: 0;
   padding: 0%;
@@ -9,15 +9,17 @@
 body {
   width: 100%;
   height: 100vh;
-  background-color: edf2fb;
+  background-color: #edf2fb;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-image: linear-gradient(#fcf5f5, #eff4fd); */
 }
 
 .main-div {
-  width: 30vw;
+  position: absolute;
+  transform: translate(-50%, 10%);
+  top: 0;
+  width: 50vw;
   padding: 50px;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
@@ -27,7 +29,7 @@ body {
 
 h1 {
   text-align: center;
-  font-family: "Roboto", sans-serif;
+  font-family: "Otomanopee One", sans-serif;
   text-transform: uppercase;
   font-size: 32px;
   letter-spacing: 5;
@@ -42,6 +44,7 @@ h1 {
   padding: 20px 0 20px 20px;
   background: #f1f4ff;
   border-radius: 5px;
+  padding-right: 5px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
@@ -65,8 +68,8 @@ h1 {
   border-radius: 50%;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
     rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-  background: #fff;
-  padding: 5px;
+  background: aliceblue;
+  padding: 2px;
   transition: all 3s ease-in-out;
 }
 
@@ -79,4 +82,23 @@ h1 {
   line-height: 1.7;
   /* background: #fcf5f5; */
   color: rgb(40, 37, 53);
+}
+
+@media (max-width: 550px) {
+  .main-div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+  }
+
+  .main-heading {
+    display: flex;
+    margin-top: 30px;
+    padding: 20px 0 20px 20px;
+    background: #f1f4ff;
+    border-radius: 5px;
+    padding-right: 9px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
 }
